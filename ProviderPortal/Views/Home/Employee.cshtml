@@ -1,0 +1,53 @@
+﻿@{
+    ViewBag.Title = "Employee";
+    
+}
+<script>
+   
+    function getDetails() {
+        var id = document.getElementById('empid').value;
+        if (id != "001343109") {
+            alert('Employee details not available');
+            return;
+        }
+        
+        document.getElementById("data1").innerHTML = "<label> Name: Snehal Rawat </label>";
+        document.getElementById("data2").innerHTML = "<label> Designation : Intern </label>";
+        document.getElementById("data3").innerHTML = "<label> Contact : 0987654321 </label>";
+        document.getElementById("data4").innerHTML = "<label> Email : snehal_rawat@optum.com </label>";
+        
+
+
+    }
+    
+</script>
+<div style="background-image:url(../../www/images/img4.png); height:500px; ">
+    <form style="margin-left: 20px" method="GET">
+        <div>
+            <label style="font-size:17px">Enter Employee ID</label>
+            <input type="text" placeholder="Employee ID" id="empid" style="height:40px; margin-left:20px; margin-top:15px">
+        </div>
+    </form>
+
+    <button onclick="getDetails()" style="margin-left:20px; margin-top:20px; height:39px; width:310px; background-color: orange; color:white; font-size:17px">Search</button>
+
+    <div class="container" style="margin-left:1px">
+        <div id="data1" style="margin-left:10px; margin-top:60px; font-size: 20px">
+
+        </div>
+
+        <div id="data2" style="margin-left:10px; margin-top: 15px; font-size: 20px">
+
+        </div>
+
+        <div id="data3" style="margin-left:10px; margin-top:15px; font-size:20px">
+
+
+
+        </div>
+        <div id="data4" style="margin-left:10px; margin-top:15px; font-size:20px">
+        </div>
+        
+    </div>
+    </div>
+        
